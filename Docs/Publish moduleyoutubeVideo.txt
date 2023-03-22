@@ -1,0 +1,59 @@
+module : my-logger2
+go mod init github.com/sug/my-logger2
+
+now create one go file main.go 
+pakage mylogger
+3 new fncs described in this file 
+
+
+github 
+create new repo :
+my-logger2
+
+
+copy url 
+
+ ----
+go to your local loger2 path 
+----
+git init 
+git remote add origin url
+git add .
+git commit -m ""
+git push origin master
+
+git branch --set-upstream-to=origin/mastsher
+
+
+
+go tracks versions of specific repository through the tags on 
+repository
+
+
+git tag "v1.0.0"
+git push --tags
+
+go to git hub -->check commited files and the tag
+
+
+-----
+
+utilising our functions
+
+logger tester 
+go mod init logger-tester    // github not required
+go get -u github.com/suga.../my-logger2
+
+
+nw you go.mod :   you will see dependency 
+
+create new main.go:
+import "github.com/suga.../my-logger2"
+mylogger.LogInfo 
+
+
+terminal
+---
+go run main.go
+
+

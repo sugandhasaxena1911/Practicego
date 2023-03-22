@@ -1,0 +1,91 @@
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ go mod tidy
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ go test ./...
+# BASICS/src/Concurrency
+src\Concurrency\02concurrency_race.go:9:6: main redeclared in this block
+        src\Concurrency\01Concurrency.go:8:6: other declaration of main
+src\Concurrency\03Concurrency_Waitgrp.go:11:6: main redeclared in this block
+        src\Concurrency\01Concurrency.go:8:6: other declaration of main
+src\Concurrency\04_mutex.go:9:6: main redeclared in this block
+        src\Concurrency\01Concurrency.go:8:6: other declaration of main
+# BASICS/src/ErrorHandling
+src\ErrorHandling\02_panic.go:8:6: main redeclared in this block
+        src\ErrorHandling\01_writelogs_to_file.go:9:6: other declaration of main
+src\ErrorHandling\ErrorHandling.go:9:6: main redeclared in this block
+        src\ErrorHandling\01_writelogs_to_file.go:9:6: other declaration of main
+# BASICS/src/Functions
+src\Functions\02_variadicParam.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\03_defer.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\04_Method.go:21:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\07_Anonymous_Functions.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\08_callback.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\09_Closure.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\10_recursion.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+src\Functions\11_Pointers.go:5:6: main redeclared in this block
+        src\Functions\01_function.go:5:6: other declaration of main
+# BASICS/src/JSON
+src\JSON\02_Unmarshal.go:8:6: main redeclared in this block
+        src\JSON\01_json_marshal.go:10:6: other declaration of main
+src\JSON\05_unmarshal.go:8:6: main redeclared in this block
+        src\JSON\01_json_marshal.go:10:6: other declaration of main
+# BASICS/src/controlflow
+src\controlflow\02_for_loop_V2.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\03_breakNcontinue.go:7:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\04_ascii.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\05_ifElse.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\06_ifelse.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\07_switch.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\08_arrays.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\09_slices.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\10_2dSlices.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\11_maps.go:5:6: main redeclared in this block
+        src\controlflow\01_for_loop.go:5:6: other declaration of main
+src\controlflow\11_maps.go:5:6: too many errors
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ git tag v0.1.0
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ git push origin v0.1.0
+Enumerating objects: 185, done.
+Counting objects: 100% (185/185), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (168/168), done.
+Writing objects: 100% (185/185), 3.56 MiB | 2.46 MiB/s, done.
+Total 185 (delta 23), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (23/23), done.
+To https://github.com/sugandhasaxena1911/GOLANG.git
+ * [new tag]         v0.1.0 -> v0.1.0
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ GOPROXY=proxy.golang.org go list -m sugandhasaxena1911/GOLANG@v0.1.0
+go: sugandhasaxena1911/GOLANG@v0.1.0: malformed module path "sugandhasaxena1911/GOLANG": missing dot in first path element
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ $ GOPROXY=proxy.golang.org go list -m github.com/sugandhasaxena1911/GOLANG@v0.1.0
+bash: $: command not found
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$ GOPROXY=proxy.golang.org go list -m github.com/sugandhasaxena1911/GOLANG@v0.1.0
+github.com/sugandhasaxena1911/GOLANG v0.1.0
+
+sugsaxen@SUGSAXEN-IN MINGW64 /c/STUDY/GOLANG/GOLANG_REPO/BASICS (main)
+$
