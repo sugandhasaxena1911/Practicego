@@ -22,6 +22,18 @@ func main() {
 		k = iota
 		l
 	)
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)
+	fmt.Println(f)
+	fmt.Println(g)
+	fmt.Println(h)
+	fmt.Println(i)
+	fmt.Println(j)
+	fmt.Println(k)
+	fmt.Println(l)
 
 	fmt.Printf("the values are %v \t %T", a, a)
 	fmt.Printf("the values are %v \t %T", b, b)
