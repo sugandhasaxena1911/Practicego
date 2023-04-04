@@ -1,0 +1,2 @@
+2023/04/03 17:50:51 open namez2.txt: The system cannot find the file specified.
+2023/04/03 17:50:51 open namez4.txt: The system cannot find the file specified.
