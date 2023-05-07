@@ -34,7 +34,8 @@ func main() {
 	fmt.Printf("%x \n", nm) //hexadecimal
 	fmt.Printf("%X \n", nm)
 	bool := false
-	fmt.Printf("%t \t %v \n", bool, bool) //binary
+	fmt.Printf("BINARY %t \t %v \n", bool, bool) //binary
+	fmt.Println(bool)
 
 	//sprint , sprintf , sprintln
 	txt2 := fmt.Sprintln(txt, "Hello")

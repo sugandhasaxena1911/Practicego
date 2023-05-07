@@ -20,15 +20,14 @@ func main() {
 
 	fmt.Println("\n\nLaunching another go routine FOO ")
 	wg.Add(1)
+	defer wg.Wait()
+
 	go foo1() ///Another go routine launched
 	fmt.Println("Num of go routines FOO ", runtime.NumGoroutine())
-	fmt.Println("Num of cpu FOO ", runtime.NumCPU())
 
 	bar1()
 	fmt.Println("\n\nNum of go routines BAR ", runtime.NumGoroutine())
-	fmt.Println("Num of cpu BAR ", runtime.NumCPU())
 
-	wg.Wait()
 }
 
 func foo1() {

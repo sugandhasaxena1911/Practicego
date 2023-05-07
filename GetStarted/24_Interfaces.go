@@ -20,7 +20,7 @@ func (flt myfloat) methodM() {
 	fmt.Printf("the value of my float %f %T\n", flt, flt)
 }
 
-func describe(i intrfc) {
+func describe1(i intrfc) {
 	fmt.Printf("The value is %v %T\n", i, i)
 }
 
@@ -33,10 +33,10 @@ func main() {
 	// struct implements interface
 	fmt.Println("struct implements interface")
 	s.methodM()
-	describe(s)
+	describe1(s)
 
-	//myfloat implements interface
+	//myfloatA implements interface
 	f := myfloat(7.987)
 	f.methodM()
-	describe(f)
+	describe1(f)
 }

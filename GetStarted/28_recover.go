@@ -49,17 +49,18 @@ func DeferInMain2Z() {
 }
 
 func Defer1Z() {
-	fmt.Println("I am defer 1 ")
-	if r := recover(); r != nil {
-		fmt.Println("RECOVERED NOW", r)
-	}
+	fmt.Println("In defer 1z")
 }
 func Defer2Z() {
 	fmt.Println("I am defer 2 ")
+	if r := recover(); r != nil {
+		fmt.Println("RECOVERED NOW", r)
+	}
 }
 func Defer3Z() {
 	fmt.Println("I am defer 3 ")
 }
 func Defer4Z() {
 	fmt.Println("I am defer 4 ")
+
 }

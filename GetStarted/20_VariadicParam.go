@@ -6,7 +6,7 @@ func main() {
 	sl := []int{1, 2, 3, 4} //sum i 10
 	n := VariadicParamV1(sl...)
 	fmt.Println("The sum is ", n)
-	fmt.Println("the slice after the function call is ", sl)
+	fmt.Println("the slice after the function call is ", sl) // Remains same, bcoz append would create new ref of slice
 
 	//V2
 	sl2 := []int{1, 2, 3, 4, 5} //sum i 15

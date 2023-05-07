@@ -53,7 +53,7 @@ func main() {
 	//this requires processing . So in case you know the capacity you need to work with , you can use
 	//make function : make ([]T, length , capacity)
 	z := make([]int, 10, 12)
-	fmt.Println(z)
+	fmt.Println("make ", z)
 	fmt.Println(len(z))
 	fmt.Println(cap(z))
 

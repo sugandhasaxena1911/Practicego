@@ -10,6 +10,11 @@ func main() {
 		c = 67
 		d = "Hello ji "
 	)
+	const (
+		e = 7
+		f
+		g
+	)
 
 	fmt.Printf("value of a is %v and type is  %T \n", a, a)
 	fmt.Printf("value of b is %v and type is  %T \n", b, b)

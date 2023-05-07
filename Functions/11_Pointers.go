@@ -30,5 +30,6 @@ func main() {
 func passbyreference(a *string) {
 	fmt.Println("the passed parameter", a)
 	*a = "hello sugandha"
+	fmt.Println(*a)
 
 }

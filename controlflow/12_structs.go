@@ -54,7 +54,7 @@ func main() {
 	fmt.Println(cc2.person.first_name, cc2.person.last_name, cc2.person.age, cc2.expertise)
 
 	//Anonymous structs
-	//where you just want strucy usage on a very small area & you dont need it to use it often
+	//where you just want struct usage on a very small area & you dont need it to use it often
 
 	person3 := struct {
 		name string

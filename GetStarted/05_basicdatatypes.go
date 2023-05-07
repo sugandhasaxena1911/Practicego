@@ -14,4 +14,9 @@ func main() {
 sugandha   !! @ 
 	saxena`
 	fmt.Println(" value Y", y)
+
+	var abc int
+	fmt.Printf("%T", abc)
+	abc = -127
+	fmt.Println(abc)
 }

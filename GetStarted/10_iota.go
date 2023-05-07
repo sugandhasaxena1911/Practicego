@@ -19,8 +19,15 @@ func main() {
 	const (
 		i = iota + 3
 		j
-		k = iota
-		l
+		k
+		l = iota
+	)
+	const (
+		m = iota
+		n = iota
+		o = iota
+		p
+		q = iota + 1
 	)
 	fmt.Println(a)
 	fmt.Println(b)

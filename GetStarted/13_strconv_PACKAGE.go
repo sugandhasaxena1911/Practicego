@@ -17,7 +17,7 @@ func main() {
 	b, err1 := strconv.ParseBool("true")
 	j, _ := strconv.ParseInt("-1100", 2, 64)
 	k, _ := strconv.ParseFloat("-15.3", 64)
-	l, _ := strconv.ParseUint("765", 10, 64)
+	l, _ := strconv.ParseUint("765", 2, 64)
 	fmt.Println(b, j, k, l, err1)
 	//values to string
 	s := strconv.FormatBool(true)

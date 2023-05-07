@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("Inside main , calling CallOpenFile")
 	defer DeferInMain()
 	CallOpenFile()
-	fmt.Println("POINT NOTED - 3 Inside main , calling CallOpenFile -----2 ")
+	fmt.Println("POINT NOTED - 3 Inside main , called CallOpenFile -----2 ")
 	defer DeferInMain2()
 
 }
@@ -63,19 +63,21 @@ func OpenFile() {
 		//interrupts normal execution , defer 3 not called, POINT NOTED, is not printed.
 		// calls the defer functions that were deferred before , defer 2 called
 		// goes to caller , behaves as if panic happend
-		// defer 4 not called, POINT NOTED-2, is not printed.
+		// defer 4 not called, POINT NOTED-2, is not printed. defer 1 called before is called
 		// goes to caller main : POINT NOTED - 3  is not printed , DeferInMain() called , DeferInMain2 not called
-		// then prints panic and error , prints the error route followed ,  and exits with exit code-2
+		// then prints:
+		//panic:error
+		//prints the error route followed ,  and exits with exit code-2
 
 		log.Fatalln(err)
-		//prints the error
+		//prints the error calls , os.exit
 		//exits with exit code-1
 		//Print noted is not called --ALL
 		//Functions defer  are not called
 	}
 	defer f.Close()
-	defer Defer3()
+	defer Defer3() // last in first called
 
-	fmt.Println("POINT NOTED-1, Inside  the OPEN FILE FUNCTION---2 ")
+	fmt.Println("POINT NOTED-1, Inside  the OPEN FILE FUNCTION ENDED---2 ")
 
 }
