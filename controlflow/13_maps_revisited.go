@@ -24,4 +24,8 @@ func main() {
 	m4["tina"] = 1
 	fmt.Println(m4)
 
+	var m5 = make(map[string]int)
+	m5["Hello"] = 8
+	fmt.Println(m5)
+
 }
